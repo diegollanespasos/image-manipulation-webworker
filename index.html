@@ -4,21 +4,23 @@
         <meta charset="utf-8">
         <title>Image Manipulation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>Image Manipulation</h1>
 
         <input type="file" accept="image/*" id="fileinput">
-        <button onclick="processBrightnessFilter()">Brightness Filter</button>
-        <button onclick="processGrayscaleFilter()">Grayscale Filter</button>
-        <button onclick="processGreenFilter()">Green Filter</button>
 
-        <div style="margin-top: 100px; margin-bottom: 100px;">
+        <div class="button-section">
+            <button onclick="processBrightnessFilter()">Brightness Filter</button>
+            <button onclick="processGrayscaleFilter()">Grayscale Filter</button>
+            <button onclick="processGreenFilter()">Green Filter</button>
+        </div>
+        <div class="spinner-section">
             <span id="spinner" style="display: inline-block">This should be spinning...</span>
         </div>
-
-        <div>
+        <div class="canvas-section">
             <canvas id="canvas" width="0" height="0"></canvas>
         </div> 
         <script src="main.js"></script>
